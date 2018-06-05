@@ -55,8 +55,3 @@ EXPOSE 9876
 EXPOSE 9977
 
 ENTRYPOINT ["./startupClient.sh"]
-
-
-
-
-

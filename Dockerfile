@@ -28,16 +28,16 @@ RUN pip install --upgrade pip
 	
 WORKDIR /root
 
-RUN git clone https://github.com/ks5337/faraday.git faraday12
+RUN git clone https://github.com/ks5337/faraday.git faraday13
 
 RUN mkdir /root/.faraday && \
 	mkdir /root/.faraday/config && \
 	chown root:root -R /root/.faraday/ && \
-    chown root:root -R /root/faraday12/ && \
-    chmod a+x /root/faraday12/ && \
-    chmod 755 /root/faraday12/startupClient.sh
+    chown root:root -R /root/faraday13/ && \
+    chmod a+x /root/faraday13/ && \
+    chmod 755 /root/faraday13/startupClient.sh
 
-WORKDIR /root/faraday12
+WORKDIR /root/faraday13
 
 RUN ./install.sh
 

@@ -28,7 +28,7 @@ RUN pip install --upgrade pip
 	
 WORKDIR /root
 
-RUN git clone https://github.com/xiaoyan1985/faraday-1.git faraday1
+RUN git clone https://github.com/xiaoyan1985/FaradaySource.git faraday1
 
 RUN mkdir /root/.faraday && \
 	mkdir /root/.faraday/config && \
